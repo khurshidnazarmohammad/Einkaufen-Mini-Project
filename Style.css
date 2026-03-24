@@ -1,0 +1,146 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9e842;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header .logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+header .search-bar {
+    flex: 1;
+    margin: 0 15px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+header .search-btn {
+    padding: 8px 15px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header .search-btn:hover {
+    background-color: #333;
+}
+
+/* Main layout */
+.main-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.sidebar h2 {
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    padding: 8px 0;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+
+.sidebar ul li:hover {
+    color: #f9e842;
+}
+
+/* Products */
+.products {
+    flex: 1;
+}
+
+/* Banner */
+.banner {
+    background-color: #000;
+    color: #f9e842;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Accordion Product Items */
+.product-item {
+    background-color: #f9e842;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.product-item summary {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+}
+
+.product-item summary::-webkit-details-marker {
+    display: none; /* حذف فلش مرورگر */
+}
+
+.product-item img {
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+      }
